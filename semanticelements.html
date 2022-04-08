@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mini-Project</title>
+    <style>
+    #header{
+        background-color: cadetblue;
+        padding: 24px;
+    }
+
+    #navbar{
+        background-color: chocolate;
+        padding: 12px;
+        font-size: 24px;
+    }
+
+    #main-section{
+        background-color: darkgray;
+        padding: 24px;
+    }
+
+    #section{
+        background-color: darkgreen;
+        padding: 16px;
+    }
+
+    .article{
+        background-color: darkslategray;
+        padding: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    #footer{
+        background-color: firebrick;
+        padding: 24px;
+    }
+
+    #register-form{
+        width: 300px;
+        background-color: beige;
+        padding: 24px;
+    }
+
+    .input-label{
+        margin: 0%;
+        margin-bottom: 4px;
+        margin-top: 12px;
+    }
+
+    .input-item{
+        width: 100%;
+    }
+    
+    #check-terms{
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    
+    </style>
+</head>
+<body>
+<header id="header">
+    <nav id="navbar">
+        <span>Menu1</span>
+        <span>Menu2</span>
+        <span>Menu3</span>
+
+    </nav>
+
+</header>
+
+<main id="main-section">
+<section id="section">
+    <article class="article">
+        <header>
+            <h3>Article title 1</h3>
+            <a href="/">Author1</a>
+        </header>
+        <p>Lorem Ipsum Dolor. Lorem Ipsum Dolor. Lorem Ipsum Dolor. Lorem Ipsum Dolor</p>
+    </article>
+    <article class="article">
+        <header>
+            <h3>Article title 2</h3>
+            <a href="/">Author2</a>
+        </header>
+        <p>Lorem Ipsum Dolor. Lorem Ipsum Dolor. Lorem Ipsum Dolor. Lorem Ipsum Dolor</p>
+    </article>
+</section>
+
+<details>
+    <summary> Chapter1 </summary>
+    <p>this is an introductory chapter</p>
+</details>
+
+<details>
+    <summary> Chapter2 </summary>
+    <ul>
+        <li>Heading</li>
+        <li>Paragraph</li>
+        <li>Links</li>
+    </ul>
+</details>
+
+<details>
+    <summary> Chapter3 </summary>
+    <a href="http://www.edyoda.com" target="_blank">Edyoda</a>
+</details>
+
+<!-- <form>
+    Username :<br>
+    <input type="text" name="username"><br>
+    Password :<br>
+    <input type="password" name="password"><br>
+    <input type="submit" value="submit">
+</form> -->
+
+
+<h1>Sign up</h1>
+<form id="register-form" method="GET">
+    <div>
+        <p class="input-label">Full name :</p>
+    <input class="input-item" type="text" name="full-name" placeholder="Full name" required>
+    </div>
+
+    <div>
+        <p class="input-label">E-mail :</p>
+    <input class="input-item" type="email" name="email" required>
+    </div>
+
+    <p class="input-label">Age :</p>
+    <input class="input-item" type="number" name="age" required min="18" max="46">
+    </div>
+
+    <div>
+        <p class="input-label">Password :</p>
+    <input class="input-item" type="password" name="password" required maxlength="8">
+    </div>
+
+    <div>
+        <p class="input-label">Confirm password :</p>
+    <input class="input-item" type="password" name="confirm-password" required maxlength="8">
+    </div>
+
+    <div>
+        <p class="input-label">Gender :</p>
+    <input type="radio" name="male" value="male">Male</input>
+    <input type="radio" name="female" value="female">Female</input>
+    <input type="radio" name="other" value="other">Other</input>
+    </div>
+
+    <div>
+        <p class="input-label">Security Question :</p>
+    <select name="security-question" multiple>
+        <option value="first-pet-name">What was your first pet name</option>
+        <option value="first-job">What was your first job</option>
+        <option value="Nickname">What is your nickname</option>
+    </select>
+    </div>
+
+    <div>
+        <textarea class="input-item" name="answer" rows="6" cols="30"></textarea>
+    </div>
+
+    <div> 
+    <input id="check-terms" type="checkbox" name="terms-conditions" value="accept">I agree to the terms and conditions</input>
+    </div>
+
+    <input type="submit" value="Register">
+
+    <div>
+        <input list="technologies"name="technology" />
+    <datalist id="technologies">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="Python">
+        <option value="React">
+        <option value="Django">
+    </datalist>
+    </div>
+
+        <input type="date" name="date" min="1995-01-01" max="2020-01-01"><br/>
+        <input type="file" name="file">
+        <input type="reset" value="resert">
+    
+</form>
+</main>
+<footer id="footer">Copiright 2021</footer>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+

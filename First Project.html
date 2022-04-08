@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My First HTML Page</title>
+    <style>
+        .opel-image {
+            width :350px;
+            height :350px;
+            margin-bottom: 32px;
+        }
+
+        .opel-description {
+            font-size: 24px; 
+            line-height: 1.5; 
+            margin-bottom: 32px;
+        }
+
+        .menu-item {
+            display: inline;
+            padding: 12px;
+            background-color: lightblue;
+        }
+
+        .section{
+            width: 100%;
+            height: 550px;
+        }
+
+        #topbar{
+            list-style-type: disc;
+            background-color: beige;
+            padding: 16px;
+        }
+
+        #First-section{
+            background-color: blue;
+        }
+
+        #Second-section{
+            background-color: blueviolet;
+        }
+
+        #Third-section{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body style="margin-left: 16px;background-color: beige;">
+    
+    <h1 style="margin-top: 16px; margin-bottom: 16px;text-align: center; font-size: 48px; color: blue;">This is a heading tag</h1>
+    <h2>This is a heading tag</h2>
+    <h6>This is an h6 heading tag</h6>
+    <pre><p style="padding: 16px; font-size: 24px; line-height: 1.5;">
+        everyone is a <b>genius</b> 
+        but if you judge a fish by it's
+        ability to <i>climb a tree</i> ,
+        il will live its whole live believing
+        that it is stupid  </p></pre>
+
+        <!-- <img src="/corsa.jpg" alt="OPEL CORSA" width="600" height="600" /> -->
+        <img src="/corsa.jpg" alt="OPEL CORSA" style="width: 100%;height: 600px" />
+
+        <!-- Roman Numeral List -->
+        <h1 style="padding-left: 16px; font-size: 24px;">planets in solar system</h1>
+        <ol type="I">
+            <li>jupiter</li>
+            <li>mars</li>
+            <li>pluto</li>
+            <li>uranus</li>
+
+        </ol>
+
+        <ul style="list-style-type: disc;">
+            <li>jupiter</li>
+            <li>mars</li>
+            <li>pluto</li>
+            <li>uranus</li> 
+        </ul>
+        <div style="background-color: beige;padding: 16px">
+            <!-- <h2>This is a heading</h2> -->
+            <!-- <p>This is a paragraph</p> -->
+            <span style="background-color: dimgrey;font-size: 24px;padding: 12px"> Home </span>
+            <span style="background-color: dimgrey;font-size: 24px;padding: 12px"> About </span>
+            <span style="background-color: dimgrey;font-size: 24px;padding: 12px"> Profile </span>
+            <span style="background-color: dimgrey;font-size: 24px;padding: 12px"> Contact </span>
+        </div>
+
+        <img class="opel-image" src="/Images/20170419_170030.jpg" alt="OPEL CORSA1" />
+        <p class="opel-description">First image of the car </p>
+        <img class="opel-image" src="/Images/20170419_170038.jpg" alt="OPEL CORSA2" />
+        <p class="opel-description">Second image of the car </p>
+        <img class="opel-image" src="/Images/20170419_170040.jpg" alt="OPEL CORSA3" />
+        <p class="opel-description">Third image of the car </p>
+
+            <a href="http://www.opel.co.za/cars/corsa-models/corsa/overview.html" target="_blank">
+            <img class="opel-image" src="http://www.opel.co.za/content/dam/opel/south_africa/coming-soon/corsa-6th-generation/16x9/opel_corsa_exterior_16x9_BIgtx20_e01_007_C_016611.jpg?imwidth=600" alt="new-opel-corsa" /></a>
+            
+            <!-- <a href="https://www.distractify.com/p/is-between-two-ferns-staged" target="_blank">
+                Is btween two ferns staged or not ?</a> -->
+
+                
+        <!-- <ul style="list-style-type: none;">
+            <li class="menu-item"><a href="First Project.html" target="_blank">HOME</a></li>
+            <li class="menu-item">ABOUT</li>
+            <li class="menu-item">HELP</li>
+            <li class="menu-item">CONTACT</li> 
+        </ul> -->
+
+        <ul id="topbar">
+            <li class="menu-item"><a href="First Project.html" target="_blank">HOME</a></li>
+            <li class="menu-item"><a href="#First-section">ABOUT</a></li>
+            <li class="menu-item">HELP</li>
+            <li class="menu-item">CONTACT</li> 
+        </ul>
+
+        <div id="First-section" class="section">
+            <h1>ABOUT SECTION</h1>
+        </div>
+        
+        <div id="Second-section" class="section">
+            <h1>HELP SECTION</h1>
+        </div>
+
+        <div id="Third-section" class="section">
+            <h1>CONTACT SECTION</h1>
+        </div>
+
+    </body>
+</html>
